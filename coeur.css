@@ -1,0 +1,33 @@
+/*
+Pour utiliser ce script, il vous suffit de définir la classe "coeur",
+à laquelle sera appliquée les modifications nécéssaires.
+*/
+
+body {
+    background: #131416;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial, sans-serif;
+}
+
+.coeur {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    background: #F34D4D;
+    padding: 12px 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0 rgba(255, 71, 84, .7);
+    animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+}
+
+@keyframes battement {
+    to {
+        box-shadow: 0 0 0 30px rgba(255, 71, 84, 0)
+    }
+}
